@@ -11,9 +11,7 @@ from .metrics import performance
 def run_robustness(d,parts,pred,models,cfg,out):
     test=d.iloc[parts[2]].reset_index(drop=True);rows=[]
     def add(label,axis,decision,score,cohort=test):
-        keep,groups=analysis_cohort(cohort,axis,cfg['sparse_min_class'])
-        js=[observed_joint(cohort.two_year_recid.to_numpy()[keep & (cohort[axis]==g).to_numpy()],decision[keep & (cohort[axis]==g).to_numpy()]) for g in groups]
-        rows.append(dict(check=label,axis=axis,n=int(keep.sum()),eo=eo(js),**performance(cohort.two_year_recid,score,decision)))
+        rows.append(robustness_row(label,axis,decision,score,cohort,cfg['sparse_min_class']))
     for axis in ['race','sex','intersection']:
         for t in [.35,.5,.65]: add('LR threshold '+str(t),axis,(pred['LR']['score']>=t).astype(float),pred['LR']['score'])
         for seed in range(10): add('EO random seed '+str(seed),axis,pred[f'EO_{axis}_sample{seed}']['decision'],pred['EO_'+axis]['score'])
@@ -52,3 +50,10 @@ def run_robustness(d,parts,pred,models,cfg,out):
             p=model.predict_proba(c[FEATURES])[:,1]
         for axis in ['race','sex','intersection']: add('screening window '+str(window),axis,(p>=.5).astype(float),p,c)
     frame=pd.DataFrame(rows);frame.to_csv(out/'robustness.csv',index=False);return frame
+
+
+def robustness_row(label,axis,decision,score,cohort,min_class):
+    """EO, predictive metrics and N refer to exactly the same eligible people."""
+    keep,groups=analysis_cohort(cohort,axis,min_class)
+    js=[observed_joint(cohort.two_year_recid.to_numpy()[keep & (cohort[axis]==g).to_numpy()],np.asarray(decision)[keep & (cohort[axis]==g).to_numpy()]) for g in groups]
+    return dict(check=label,axis=axis,n=int(keep.sum()),eo=eo(js),**performance(cohort.two_year_recid.to_numpy()[keep],np.asarray(score)[keep],np.asarray(decision)[keep]))

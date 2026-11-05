@@ -32,7 +32,27 @@ assert len(list(Path('figures').glob('*.pdf')))==14
 assert len(list(Path('figures').glob('*.svg')))==14
 assert (out/'run_manifest.json').exists() and Path('docs/FINAL_REPORT.md').stat().st_size>1000
 hashes=json.loads((out/'source_hashes.json').read_text())
-assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest()==h for p,h in hashes.items())
+source_status='verified'
+changed=[p for p,h in hashes.items() if hashlib.sha256(Path(p).read_bytes()).hexdigest()!=h]
+if changed:
+    provenance=json.loads((out/'verification/source_provenance.json').read_text())
+    for p,h in hashes.items():
+        original=out/'verification/original_sources'/Path(p).name
+        assert hashlib.sha256(original.read_bytes()).hexdigest()==h
+    for p,h in provenance['current_sources'].items():
+        assert hashlib.sha256(Path(p).read_bytes()).hexdigest()==h
+    assert (out/'verification/independent_numerical_audit.json').exists()
+    source_status='original snapshots verified; corrected sources separately fingerprinted'
+    extra=pd.read_csv(out/'verification_simulation/simulation.csv')
+    assert len(extra)==3600 and extra.groupby(['setting','n','method']).rep.nunique().eq(200).all()
+    mc=pd.read_csv(out/'verification/monte_carlo_intervals.csv')
+    for row in mc.itertuples():
+        assert row.mc_low>=-1e-12 and row.mc_high<=1+1e-12
+        assert row.mc_low<=row.fraction+1e-12 and row.fraction<=row.mc_high+1e-12
+        assert row.successes<=row.repetitions
+    bsrows=pd.read_csv(out/'bootstrap.csv.gz')
+    assert bsrows.groupby(['axis','method','scenario']).replicate.nunique().eq(1000).all()
+
 result={'status':'passed','sensitivity_tables':len(summary),'scenario_comparisons':count,'synthetic_datasets':len(sim)//2,
-        'bootstrap_replicates':cfg['bootstrap'],'test_people':len(pred),'figure_sets':14,'source_hashes':'verified'}
+        'bootstrap_replicates':cfg['bootstrap'],'test_people':len(pred),'figure_sets':14,'source_hashes':source_status}
 (out/'artifact_validation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))

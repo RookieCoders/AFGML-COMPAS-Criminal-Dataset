@@ -1,8 +1,8 @@
-# Measurement-assumption register (specified before sensitivity execution)
+# Measurement-assumption register (original exploratory configuration)
 
 This is a retrospective audit, not a deployment recommendation. Ystar denotes a hypothetical latent binary outcome. Neither Ystar nor recording-error rates are identified by COMPAS. Recorded rearrest is not a direct measure of offenses or behavior.
 
-Primary region: every group has alpha,beta in {0,.025,...,.20}; alpha=P(recorded=1 | latent=0,A), beta=P(recorded=0 | latent=1,A). This exploratory region is a computational stress test, not an empirical plausibility claim. It was chosen from the requested specification before executing the sensitivity analysis, not externally preregistered. There is no probability distribution over grid cells. Reversal fractions depend on parameterization and resolution and are not posterior probabilities.
+Primary region: every group has alpha,beta in {0,.025,...,.20}; alpha=P(recorded=1 | latent=0,A), beta=P(recorded=0 | latent=1,A). This exploratory region is a computational stress test, not an empirical plausibility claim. The implementation used the requested exploratory grid. This was not externally preregistered; historical pre-execution timing is not independently established by the verification. There is no probability distribution over grid cells. Reversal fractions depend on parameterization and resolution and are not posterior probabilities.
 
 Informative measurement requires alpha+beta<1, determinant>1e-8. Joint-cell numerical tolerance is 1e-10; materially negative values are rejected, never clipped. Undefined latent outcome denominators invalidate metrics. A scenario must be feasible for both methods in a comparison. Bootstrap uses the common feasible set for all six included methods, a deliberately stronger requirement.
 
@@ -12,7 +12,7 @@ A,X influence hypothetical Ystar; A,X influence decisions D; A,Ystar influence r
 
 Sensitivity contrasts: race is African-American versus Caucasian; sex retains both recorded categories; intersection retains the four Black/white-by-sex groups if each has at least 20 test examples in each observed outcome class. For four groups, vary two race-specific noise profiles jointly across sexes. This is a structured four-dimensional slice, not an exhaustive eight-dimensional intersectional grid. All released races and intersections remain in descriptive observed-label tables; sparse groups are flagged and not pooled into an invented identity. Race, sex and intersection mitigations are fitted separately.
 
-Methods compared, in advance: LR versus each of reweighed LR, equalized-odds LR, GBT, BN, and COMPAS. EO=max(range(TPR),range(FPR)) over the common groups. Ties have absolute EO-difference <=1e-4. Strict reversals require opposite signs beyond this tolerance in both observed and hypothetical rankings. No selected reversal is confirmatory evidence.
+Configured method comparisons: LR versus each of reweighed LR, equalized-odds LR, GBT, BN, and COMPAS. EO=max(range(TPR),range(FPR)) over the common groups. Ties have absolute EO-difference <=1e-4. Strict reversals require opposite signs beyond this tolerance in both observed and hypothetical rankings. No selected reversal is confirmatory evidence.
 
 Ablations: identity measurement (alpha=beta=0); equal-noise grid; fixed points versus sensitivity ranges. Robustness: narrower [0,.1], broader [0,.3], coarse .05 grids; age standardization; exclusion of age; screening windows 15 and 60 days; thresholds .35,.5,.65; ten sampled EO seeds. Primary expected EO decisions integrate randomization exactly, so bootstrap uncertainty excludes Monte Carlo decision randomness. Report the sampled-seed check separately.
 

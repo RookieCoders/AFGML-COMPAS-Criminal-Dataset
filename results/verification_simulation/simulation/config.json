@@ -1,0 +1,13 @@
+{
+  "seed": 7102026,
+  "sample_sizes": [
+    1000,
+    5000,
+    10000
+  ],
+  "simulation_reps": 200,
+  "source_sha256": "aa1e3c489a0c3fd6e9534ec10b3b76a4cf722ffadd2183b03e405eea200eb932",
+  "bootstrap_reps": 200,
+  "tie_tolerance": 0.0001,
+  "measurement_sha256": "8201a450044d18ad75a51b173b82f8e1c5cc900844e8c7318b52ed52429c8849"
+}

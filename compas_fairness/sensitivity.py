@@ -10,7 +10,7 @@ from .measurement import observed_joint,eo,scenarios,sweep,invert,rates
 def analysis_cohort(d,axis,min_class=20):
     # Race sensitivity is the prespecified Black/white contrast; observed audit retains all races.
     keep=np.ones(len(d),dtype=bool) if axis=='sex' else d.race.isin(['African-American','Caucasian']).to_numpy(copy=True)
-    counts=pd.crosstab(d.loc[keep,axis],d.loc[keep,'two_year_recid'])
+    counts=pd.crosstab(d.loc[keep,axis],d.loc[keep,'two_year_recid']).reindex(columns=[0,1],fill_value=0)
     valid=counts.index[counts.min(axis=1)>=min_class].tolist()
     keep &= d[axis].isin(valid).to_numpy()
     return keep,sorted(valid)

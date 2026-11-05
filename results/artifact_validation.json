@@ -6,5 +6,5 @@
   "bootstrap_replicates": 1000,
   "test_people": 1235,
   "figure_sets": 14,
-  "source_hashes": "verified"
+  "source_hashes": "original snapshots verified; corrected sources separately fingerprinted"
 }

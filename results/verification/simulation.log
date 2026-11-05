@@ -1,0 +1,9 @@
+INFO:root:Simulation equal n=1000 repetitions=200 complete
+INFO:root:Simulation equal n=5000 repetitions=200 complete
+INFO:root:Simulation equal n=10000 repetitions=200 complete
+INFO:root:Simulation unequal n=1000 repetitions=200 complete
+INFO:root:Simulation unequal n=5000 repetitions=200 complete
+INFO:root:Simulation unequal n=10000 repetitions=200 complete
+INFO:root:Simulation violation n=1000 repetitions=200 complete
+INFO:root:Simulation violation n=5000 repetitions=200 complete
+INFO:root:Simulation violation n=10000 repetitions=200 complete

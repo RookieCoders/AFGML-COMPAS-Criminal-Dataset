@@ -54,3 +54,5 @@ Expected selection probabilities define EO policy decisions. Underlying LR outco
 Sensitivity bounds are **not confidence intervals**. Reversal fractions are **not probabilities**. Bootstrap intervals condition on the fixed model fits; they omit training and measurement-assumption uncertainty. See the report for finite Monte Carlo precision and assumption-violation results.
 
 Validation evidence: `results/tests.xml` records the automated tests; `results/artifact_validation.json` checks all 75 sensitivity tables, exact zero-error reconstruction, ranking signs, person partitions, repetition counts, figures and current source hashes. The original notebook cohort and score-association audit also have a separate [cohort report](docs/COHORT_REPORT.md).
+
+Final verification: see [requirements matrix](docs/REQUIREMENTS_MATRIX.md), the final verification section of [the same audit report](docs/FINAL_REPORT.md), and results/verification/. The additional 200-repetition simulation has its own configuration and results/verification_simulation/ outputs; it does not replace the original exploratory outputs.
