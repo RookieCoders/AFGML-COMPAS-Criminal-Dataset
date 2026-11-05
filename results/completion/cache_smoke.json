@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "temporary_directory": "/tmp/compas-cache-smoke-dbrc44es",
+  "mode": "models --reuse-models; no training",
+  "all_saved_predictions": "identical",
+  "production_outputs_untouched": true
+}

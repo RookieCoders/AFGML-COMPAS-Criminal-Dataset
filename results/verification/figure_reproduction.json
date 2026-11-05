@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "png_byte_identity": {
+    "01_measurement_dag.png": true,
+    "02_cohort_flow.png": true,
+    "03_group_outcomes.png": true,
+    "04_observed_fairness.png": true,
+    "05_predictive_tradeoffs.png": true,
+    "06_calibration.png": true,
+    "07_feasibility.png": true,
+    "08_sensitivity.png": true,
+    "09_ranking_reversal.png": true,
+    "10_eo_ranges.png": true,
+    "11_simulation_recovery.png": true,
+    "12_simulation_coverage.png": true,
+    "13_ablations.png": true,
+    "14_robustness.png": true
+  },
+  "regenerated_directory": "/tmp/compas-figure-verification-hltlyjkq"
+}

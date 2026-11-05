@@ -1,0 +1,18 @@
+{
+  "specified_at_utc": "2026-11-05T21:04:29.723945+00:00",
+  "base_commit": "1be36dfdd9172be20a5e78ba73f93abeaceba62e",
+  "type": "additional computational validation, specified after exploratory results; not external preregistration",
+  "configuration": {
+    "seed": 7102026,
+    "simulation_reps": 200,
+    "sample_sizes": [
+      1000,
+      5000,
+      10000
+    ],
+    "simulation_bootstrap": 200,
+    "tie_tolerance": 0.0001
+  },
+  "targets": "Known-population bias/RMSE, sensitivity coverage, percentile CI coverage with Wilson Monte Carlo intervals. Fixed original DGPs; no scenario search for stronger COMPAS results. Independent SeedSequence streams; preserve original 270 datasets.",
+  "precision": "200 repetitions: worst-case coverage Monte Carlo SE .0354 versus .0913 at 30. Bootstrap 200 remains finite; no claim of precise nominal coverage."
+}

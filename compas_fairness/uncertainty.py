@@ -22,13 +22,17 @@ def run_bootstrap(d,pred,cfg,out):
             mask=bd[axis].isin(groups).to_numpy(copy=True)
             if axis!='sex': mask &= bd.race.isin(['African-American','Caucasian']).to_numpy()
             names=['LR','RW_'+axis,'EO_'+axis,'GBT','BN','COMPAS']
-            if any(not np.any(mask & (bd[axis]==g).to_numpy()) for g in groups):
-                for name in names: rows.append(dict(replicate=b,axis=axis,method=name,scenario='observed',eo=np.nan,reason='absent_group',difference_from_LR=np.nan))
-                continue
-            j=joints_for(bd,bp,axis,names,mask,groups)
             # Fixed prespecified points, not selected based on test reversal maps.
             scenarios=[('observed',np.zeros((len(groups),2))),('equal_05',np.full((len(groups),2),.05)),
                        ('contrast',np.array([[.1,.05] if ('Caucasian' in g or g=='Male') else [.025,.1] for g in groups]))]
+            if any(not np.any(mask & (bd[axis]==g).to_numpy()) for g in groups):
+                for label,_ in scenarios:
+                    for name in names:
+                        rows.append(dict(replicate=b,axis=axis,method=name,scenario=label,eo=np.nan,reason='absent_group',difference_from_LR=np.nan))
+                        for group in groups:
+                            group_rows.append(dict(replicate=b,axis=axis,method=name,scenario=label,group=group,reason='absent_group',fpr=np.nan,tpr=np.nan))
+                continue
+            j=joints_for(bd,bp,axis,names,mask,groups)
             for label,s in scenarios:
                 gaps,valid,reason,grates=sweep(j,s[None])
                 for m,name in enumerate(names):

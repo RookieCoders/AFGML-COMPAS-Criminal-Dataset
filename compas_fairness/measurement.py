@@ -44,7 +44,7 @@ def eo(joints):
 def observed_joint(y, decision):
     """Supports deterministic decisions or postprocessor selection probabilities."""
     y, d = np.asarray(y), np.asarray(decision)
-    if len(y)==0 or not np.isin(y,[0,1]).all() or not np.isfinite(d).all() or np.any((d<0)|(d>1)):
+    if y.ndim!=1 or d.ndim!=1 or y.shape!=d.shape or len(y)==0 or not np.isin(y,[0,1]).all() or not np.isfinite(d).all() or np.any((d<0)|(d>1)):
         raise ValueError('invalid_decisions_or_labels')
     return np.array([[np.mean((1-d)*(y==0)),np.mean((1-d)*(y==1))],
                      [np.mean(d*(y==0)),np.mean(d*(y==1))]])
@@ -74,6 +74,9 @@ def sweep(joints, scenario_array):
     if (j.ndim!=4 or j.shape[-2:]!=(2,2) or not np.isfinite(j).all() or
         j.min() < -TOL or not np.allclose(j.sum(axis=(-2,-1)),1,atol=TOL,rtol=0)):
         raise ValueError('invalid_observed_joints')
+    scenario_array=np.asarray(scenario_array,dtype=float)
+    if scenario_array.ndim!=3 or scenario_array.shape[1:]!=(j.shape[1],2) or j.shape[1]<2:
+        raise ValueError('invalid_scenario_shape_or_group_count')
     a,b = scenario_array[:,:,0], scenario_array[:,:,1]
     det=1-a-b
     safe=np.where(det>1e-8,det,np.nan)

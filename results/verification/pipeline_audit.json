@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "test_people": 1235,
+  "all_saved_predictions": "checked against checkpoint",
+  "train_only_scaler_means": "checked",
+  "EO_expected_probabilities_and_fallbacks": "checked",
+  "BN_posteriors": "independent CPD product matches saved predictions",
+  "predictive_scores_and_calibration": "recomputed from saved people"
+}

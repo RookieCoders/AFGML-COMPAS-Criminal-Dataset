@@ -6,5 +6,15 @@
   "bootstrap_replicates": 1000,
   "test_people": 1235,
   "figure_sets": 14,
-  "source_hashes": "verified"
+  "source_hashes": "original snapshots verified; corrected sources separately fingerprinted",
+  "completion_validation": {
+    "status": "passed",
+    "independently_checked_intersection_comparisons": 163850,
+    "independent_parameter_dimensions": 8,
+    "new_synthetic_datasets": 6000,
+    "repetitions_per_case": 200,
+    "summary_rows_checked": 60,
+    "figure_sets": 2,
+    "source_and_input_checksums": "passed"
+  }
 }

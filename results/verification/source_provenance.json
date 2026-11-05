@@ -1,0 +1,37 @@
+{
+  "original_commit": "1be36dfdd9172be20a5e78ba73f93abeaceba62e",
+  "original_sources": {
+    "compas_fairness/__init__.py": "65515fd870db86ad3af3b17f860b37659c8f521bb093532e7afec9d213520efa",
+    "compas_fairness/data.py": "d5f5c8bbca1af9c8efe4666d8d67844ae899ad7a7df57e239150c69a947954d2",
+    "compas_fairness/measurement.py": "a0a6ed3e0388e21156cabd7d068b8dfd8924f331a9b2f02ea8843f7a9a64db85",
+    "compas_fairness/metrics.py": "8c86ea0601a27f663c2ee6203c454a39c9722dc3e13c7bdf0ac49f32b7337db3",
+    "compas_fairness/models.py": "8d1cbdeea115197201d3b3bb51796ac0ab2f2cf83832faa0e620db950ce7d6ec",
+    "compas_fairness/report.py": "ee6faf0be6815db829827358afb582e0a69e00353fb791b95081ae30c9a35b78",
+    "compas_fairness/robustness.py": "ff888369832e07220fc8b330d4eda62f045ca4d9890e15e382c608d8744ef06c",
+    "compas_fairness/run.py": "e3953381056faffc0ddbca70aa49ddabeaaff2ad3b4c3f8107e14ee68cfe1dcf",
+    "compas_fairness/sensitivity.py": "fe19abc4381a4a77e85640d55d868d1e27b12c7655854cf3c75a31c211495fdf",
+    "compas_fairness/simulation.py": "dd2babca225db46540aa5e14bd4833e9db90f5aa0bd766f193cccf12476d5ce3",
+    "compas_fairness/uncertainty.py": "12751c621aa1583eb438c92d27fe5b4b84a3caa3e9d34a24c789181b6e62984f"
+  },
+  "current_sources": {
+    "compas_fairness/__init__.py": "65515fd870db86ad3af3b17f860b37659c8f521bb093532e7afec9d213520efa",
+    "compas_fairness/completion.py": "203864685e4eae36800d71288cba59038b619f30014c369f61d56cbde93e75af",
+    "compas_fairness/data.py": "d5f5c8bbca1af9c8efe4666d8d67844ae899ad7a7df57e239150c69a947954d2",
+    "compas_fairness/measurement.py": "8201a450044d18ad75a51b173b82f8e1c5cc900844e8c7318b52ed52429c8849",
+    "compas_fairness/metrics.py": "8c86ea0601a27f663c2ee6203c454a39c9722dc3e13c7bdf0ac49f32b7337db3",
+    "compas_fairness/models.py": "8d1cbdeea115197201d3b3bb51796ac0ab2f2cf83832faa0e620db950ce7d6ec",
+    "compas_fairness/monte_carlo.py": "57b490db01a60b10d224fe52d139b3573a3aaeb2c3ed0008826cf758ca07506a",
+    "compas_fairness/provenance.py": "6b1539ef9a1dbcfe1c3210bc21f57c593bce120938317e71f87927e44563dfae",
+    "compas_fairness/report.py": "d1d0ad8887f4cb1d0ff54e5b3679076a5261c1cbb529accb41df63aab7f87f01",
+    "compas_fairness/robustness.py": "b35505e8eaf39d3a2cf38f3975ee9920e143407d940c6c3f020772e76f2c2c3c",
+    "compas_fairness/run.py": "21e725b984d3c49b4c6c3bd8cb19706df7236abe8dcc255cd51ec126ea8b98c3",
+    "compas_fairness/sensitivity.py": "2f3bec0889f15eb577a98ce59b22f84036e7073b331b65f780fa723312950631",
+    "compas_fairness/simulation.py": "aa1e3c489a0c3fd6e9534ec10b3b76a4cf722ffadd2183b03e405eea200eb932",
+    "compas_fairness/uncertainty.py": "78363f2d829bc13f9b9db1ba599a6312abd4ba96c114ad498e037c111a9e96d5"
+  },
+  "original_outputs": "results/ (except corrected robustness.csv and artifact validation); original source hashes and run manifest retained",
+  "corrected_output": "results/robustness.csv; original retained in results/verification/original_robustness.csv",
+  "added_simulation": "results/verification_simulation/ uses current simulation/measurement sources; own source fingerprints in simulation/config.json",
+  "unchanged_headline_sensitivity": "independently verified from retained decisions, not rerun",
+  "completion": "results/completion/ is separately configured and fingerprinted; original sensitivity, predictive and bootstrap tables retained"
+}
