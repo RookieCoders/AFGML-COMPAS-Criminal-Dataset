@@ -1,0 +1,10 @@
+{
+  "seed": 2026,
+  "sample_sizes": [
+    1000,
+    5000,
+    10000
+  ],
+  "simulation_reps": 30,
+  "source_sha256": "dd2babca225db46540aa5e14bd4833e9db90f5aa0bd766f193cccf12476d5ce3"
+}

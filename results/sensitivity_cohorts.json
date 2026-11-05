@@ -1,0 +1,31 @@
+[
+  {
+    "axis": "race",
+    "included_groups": [
+      "African-American",
+      "Caucasian"
+    ],
+    "included_n": 1087,
+    "excluded_n": 148
+  },
+  {
+    "axis": "sex",
+    "included_groups": [
+      "Female",
+      "Male"
+    ],
+    "included_n": 1235,
+    "excluded_n": 0
+  },
+  {
+    "axis": "intersection",
+    "included_groups": [
+      "African-American / Female",
+      "African-American / Male",
+      "Caucasian / Female",
+      "Caucasian / Male"
+    ],
+    "included_n": 1087,
+    "excluded_n": 148
+  }
+]

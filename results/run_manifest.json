@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "config": {
+    "seed": 2026,
+    "bootstrap": 1000,
+    "simulation_reps": 30,
+    "sample_sizes": [
+      1000,
+      5000,
+      10000
+    ],
+    "grid_max": 0.2,
+    "grid_step": 0.025,
+    "tie_tolerance": 0.0001,
+    "sparse_min_class": 20
+  },
+  "sha256_raw": "c451db85908b2f7fef1d83203bedf6b71ecda0d5af468d82ae62178f91d0cc7d",
+  "assumptions_sha256": "a29cbb22284754bd4ab2240d14daec340460cbacb9f7ad5499285ac7f1fbb203"
+}
