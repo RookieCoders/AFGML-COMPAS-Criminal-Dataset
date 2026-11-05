@@ -1,0 +1,32 @@
+{
+  "specified_at_utc": "2026-11-05T21:17:30.805722+00:00",
+  "type": "prospectively specified additional computational validation; original COMPAS results remain exploratory, not external preregistration",
+  "config": {
+    "seed": 8172026,
+    "sobol_power": 14,
+    "intersection_maxima": [
+      0.2,
+      0.3
+    ],
+    "tie_tolerance": 0.0001,
+    "sample_sizes": [
+      1000,
+      5000,
+      10000
+    ],
+    "group_probabilities": [
+      0.5,
+      0.2
+    ],
+    "noise_strengths": [
+      0.5,
+      1.0
+    ],
+    "simulation_reps": 200,
+    "boundary_noise_strength": 0.0
+  },
+  "intersection": "Scrambled Sobol 2^14 points in 8 dimensions (independent alpha/beta for four groups), plus identity; fixed two rectangular regions. Pairwise common feasibility. Design fractions have no substantive probability interpretation.",
+  "positive_control": "Select first population reversal and stable example with latent gap difference >=.025 and observed difference >=.01 using seed 410 and fixed noise-strength cases. Fix examples before sampling. Boundary case zero noise with identical methods. Use shared people and known errors; classify ties at 1e-4; infeasible replicates count as detection failures. Report Wilson MC intervals, point recovery bias/RMSE, generating-EO percentile CI coverage and sensitivity bound coverage separately.",
+  "historical_limit": "No independent timestamp of the original exploratory register exists; cannot retroactively satisfy original section 11 use of preregistered.",
+  "survival_determination": "Original sections 2.10, 11 experiment 1 and 20.1 request a documented observed-label audit, not a separate Cox model; reproduced notebook regression fulfills this. No distinct external Problem 7 rubric was supplied beyond this original master request."
+}
