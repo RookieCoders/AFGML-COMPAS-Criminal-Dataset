@@ -56,3 +56,16 @@ if changed:
 result={'status':'passed','sensitivity_tables':len(summary),'scenario_comparisons':count,'synthetic_datasets':len(sim)//2,
         'bootstrap_replicates':cfg['bootstrap'],'test_people':len(pred),'figure_sets':14,'source_hashes':source_status}
 (out/'artifact_validation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
+
+# New completion analyses remain separate from the original and first verification counts.
+if (out/'completion/manifest.json').exists():
+    completion=json.loads((out/'completion/validation.json').read_text())
+    assert completion['status']=='passed' and completion['new_synthetic_datasets']==6000
+    assert completion['independently_checked_intersection_comparisons']==163850
+    manifest=json.loads((out/'completion/manifest.json').read_text())
+    assert manifest['source_sha256']==hashlib.sha256(Path('compas_fairness/completion.py').read_bytes()).hexdigest()
+    assert manifest['predictions_sha256']==hashlib.sha256((out/'test_predictions.csv.gz').read_bytes()).hexdigest()
+    assert manifest['config']==json.loads(Path('configs/completion.json').read_text())
+    result['completion_validation']=completion
+    (out/'artifact_validation.json').write_text(json.dumps(result,indent=2))
+    print('Completion analyses: validated')

@@ -1,5 +1,7 @@
 """Configuration-driven, checkpointed experiment CLI."""
 import argparse
+import sys
+from datetime import datetime,timezone
 import hashlib
 import json
 import logging
@@ -7,6 +9,7 @@ from pathlib import Path
 import platform
 import joblib
 import pandas as pd
+from .provenance import validate_model_metadata,write_model_metadata
 from .data import load_cohort,split,reproduce_audit
 from .models import fit_models
 from .metrics import evaluate
@@ -24,6 +27,8 @@ def main():
     args=parser.parse_args();cfg=json.loads(Path(args.config).read_text())
     out=Path('results');out.mkdir(exist_ok=True)
     logging.basicConfig(level=logging.INFO,format='%(asctime)s %(levelname)s %(message)s',handlers=[logging.StreamHandler(),logging.FileHandler(out/'run.log')])
+    record={'utc':datetime.now(timezone.utc).isoformat(),'argv':sys.argv,'config':cfg,'source_hashes':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(Path('compas_fairness').glob('*.py'))}}
+    with (out/'stage_history.jsonl').open('a') as f:f.write(json.dumps(dict(record,status='started'))+'\n')
     stages=args.stages.split(',');d,flow,info=load_cohort();parts=split(d,cfg['seed'])
     if 'audit' in stages:
         flow.to_csv(out/'cohort_flow.csv',index=False);(out/'data_quality.json').write_text(json.dumps(info,indent=2))
@@ -44,11 +49,13 @@ def main():
     needs_models=any(s in stages for s in ['models','sensitivity','bootstrap','robustness'])
     if needs_models:
         if args.reuse_models and (out/'models.joblib').exists():
+            validate_model_metadata(out/'models.joblib',d,parts)
             cached_d,cached_parts,pred,models,selection=joblib.load(out/'models.joblib')
             if not d.person.equals(cached_d.person) or any((a!=b).any() for a,b in zip(parts,cached_parts)):
                 raise ValueError('cached_model_split_mismatch')
         else:
             pred,models,selection=fit_models(d,parts,cfg['seed']);joblib.dump((d,parts,pred,models,selection),out/'models.joblib')
+            write_model_metadata(out/'models.joblib',d,parts)
         selection.to_csv(out/'model_selection.csv',index=False)
         test=d.iloc[parts[2]].reset_index(drop=True)
         tables=evaluate(test,pred)
@@ -66,7 +73,8 @@ def main():
         from .report import create_report
         create_report(out,Path('figures'))
     source_hashes={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(Path('compas_fairness').glob('*.py'))}
-    (out/'source_hashes.json').write_text(json.dumps(source_hashes,indent=2))
+    if not (out/'source_hashes.json').exists(): (out/'source_hashes.json').write_text(json.dumps(source_hashes,indent=2))
+    with (out/'stage_history.jsonl').open('a') as f:f.write(json.dumps(dict(record,status='completed'))+'\n')
     logging.info('Requested stages completed: %s',args.stages)
 
 if __name__=='__main__':main()

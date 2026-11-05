@@ -20,3 +20,5 @@ env/
 data/raw/*.csv
 # Retained locally for audit; omitted from the Git deliverable.
 ARCHIVE_MANIFEST.json
+
+results/models.joblib.json

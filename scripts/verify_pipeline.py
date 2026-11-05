@@ -46,3 +46,6 @@ for r in cal.itertuples():
     np.testing.assert_allclose([score[mask].mean(),saved.loc[mask,'outcome'].mean()],[r.predicted,r.observed],atol=1e-12)
 Path('results/verification/pipeline_audit.json').write_text(json.dumps({'status':'passed','test_people':len(te),'all_saved_predictions':'checked against checkpoint','train_only_scaler_means':'checked','EO_expected_probabilities_and_fallbacks':'checked','BN_posteriors':'independent CPD product matches saved predictions','predictive_scores_and_calibration':'recomputed from saved people'},indent=2))
 print('Pipeline audit passed')
+
+from compas_fairness.provenance import write_model_metadata
+write_model_metadata(Path('results/models.joblib'),d,parts)

@@ -1,0 +1,11 @@
+maximum,comparator,groups,n,scenarios,feasible,reversals,reversal_fraction,ties,min_difference,max_difference
+0.2,RW_intersection,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,16385,0,0.0,0,0.019252839475566053,0.04975973027005598
+0.2,EO_intersection,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,16385,0,0.0,0,0.16378646569724295,0.4481265616774049
+0.2,GBT,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,16385,1910,0.11657003356728715,9,-0.06839919478209655,0.07227287772569624
+0.2,BN,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,16385,0,0.0,0,0.14725592125485554,0.24761751120207898
+0.2,COMPAS,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,16385,2469,0.15068660360085445,4,-0.09501771817569316,0.19304934348817365
+0.3,RW_intersection,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,13698,1321,0.09643743612206161,13,-0.045408720480307085,0.09806538730570827
+0.3,EO_intersection,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,13287,508,0.0382328591856702,2,-0.2158556214493328,0.5056981289834981
+0.3,GBT,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,12851,3358,0.26130262236401836,26,-0.14333142919884012,0.15406655603772146
+0.3,BN,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,13146,432,0.032861706983112735,0,-0.21944336246273863,0.3311325243809012
+0.3,COMPAS,African-American / Female;African-American / Male;Caucasian / Female;Caucasian / Male,1087,16385,10711,1630,0.1521800018672393,6,-0.20671515168362364,0.2712382794359019

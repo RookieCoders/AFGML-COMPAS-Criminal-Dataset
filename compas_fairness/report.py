@@ -130,4 +130,6 @@ def create_report(out,figdir):
     report+='## Reproduction and artifacts\n\nSee README.md for exact commands. Source files, raw data, pinned requirements, tests, configs, checkpoints, all machine-readable experiment tables and 14 figures in PNG/PDF/SVG are retained. Current run configuration and raw/assumption hashes are in results/run_manifest.json. Figures and the report are generated only from completed result files. The original run did not publish or push; a later Git delivery is documented in docs/GIT_DELIVERY.md.\n'
     notes=Path('docs/VERIFICATION_NOTES.md')
     if notes.exists():report+='\n'+notes.read_text()
+    completion=Path('docs/COMPLETION_NOTES.md')
+    if completion.exists():report+='\n'+completion.read_text()
     Path('docs/FINAL_REPORT.md').write_text(report)
