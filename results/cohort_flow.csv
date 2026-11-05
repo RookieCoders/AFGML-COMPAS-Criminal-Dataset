@@ -1,0 +1,8 @@
+filter,n
+released,7214
+screening <= window,6623
+screening >= -window,6172
+valid recidivism flag,6172
+not ordinary traffic,6172
+valid score category,6172
+person deduplication: first released ID,6172

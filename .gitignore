@@ -1,0 +1,22 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
+results/models.joblib
+
+# Local environments, credentials and temporary artifacts
+venv/
+env/
+.cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+*.pem
+*.key
+*.tmp
+*.zip
+# Public raw data can be re-fetched with scripts/fetch_data.py.
+data/raw/*.csv
+# Retained locally for audit; omitted from the Git deliverable.
+ARCHIVE_MANIFEST.json

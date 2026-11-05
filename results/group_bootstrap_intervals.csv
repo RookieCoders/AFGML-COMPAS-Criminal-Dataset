@@ -1,0 +1,289 @@
+axis,method,scenario,group,variable,low,high,valid
+intersection,BN,contrast,African-American / Female,fpr,0.12174945252174843,0.3391686060069578,996
+intersection,BN,contrast,African-American / Female,tpr,0.339343249715078,0.6358874440894053,996
+intersection,BN,contrast,African-American / Male,fpr,0.17720966519164771,0.3039808589020274,996
+intersection,BN,contrast,African-American / Male,tpr,0.5961499829447714,0.7063226794750719,996
+intersection,BN,contrast,Caucasian / Female,fpr,0.11107706217046784,0.3313086618147539,996
+intersection,BN,contrast,Caucasian / Female,tpr,0.18705305091333072,0.6120497379279581,996
+intersection,BN,contrast,Caucasian / Male,fpr,0.13169185581238219,0.25178656323499465,996
+intersection,BN,contrast,Caucasian / Male,tpr,0.3593791640808598,0.5511744973809807,996
+intersection,BN,equal_05,African-American / Female,fpr,0.13686031404645008,0.3421679153518366,1000
+intersection,BN,equal_05,African-American / Female,tpr,0.34152184335111163,0.65781213282848,1000
+intersection,BN,equal_05,African-American / Male,fpr,0.21299315116520834,0.32647244261378283,1000
+intersection,BN,equal_05,African-American / Male,tpr,0.6034862187527815,0.7172335400321412,1000
+intersection,BN,equal_05,Caucasian / Female,fpr,0.11136046526790719,0.33125781693616924,1000
+intersection,BN,equal_05,Caucasian / Female,tpr,0.19330039783473552,0.5636141804788213,1000
+intersection,BN,equal_05,Caucasian / Male,fpr,0.13170651431296046,0.25163445185517264,1000
+intersection,BN,equal_05,Caucasian / Male,tpr,0.3438991758494138,0.5203098828686159,1000
+intersection,BN,observed,African-American / Female,fpr,0.14705882352941177,0.34486074270557027,1000
+intersection,BN,observed,African-American / Female,tpr,0.33333333333333337,0.6170719351570416,1000
+intersection,BN,observed,African-American / Male,fpr,0.23936934331671175,0.3457105064247922,1000
+intersection,BN,observed,African-American / Male,tpr,0.5893892689090275,0.6965756534544116,1000
+intersection,BN,observed,Caucasian / Female,fpr,0.1166188524590164,0.3333333333333333,1000
+intersection,BN,observed,Caucasian / Female,tpr,0.1998611111111111,0.5294577205882353,1000
+intersection,BN,observed,Caucasian / Male,fpr,0.14283963585434176,0.2579194496393267,1000
+intersection,BN,observed,Caucasian / Male,tpr,0.33333333333333337,0.4961269452701521,1000
+intersection,COMPAS,contrast,African-American / Female,fpr,0.20491872815501033,0.4387438375641713,996
+intersection,COMPAS,contrast,African-American / Female,tpr,0.606266416950482,0.8769494510345888,996
+intersection,COMPAS,contrast,African-American / Male,fpr,0.35504114181227137,0.49514047229707425,996
+intersection,COMPAS,contrast,African-American / Male,tpr,0.7125905902708499,0.8133440864225157,996
+intersection,COMPAS,contrast,Caucasian / Female,fpr,0.10220618223764132,0.30604158462350806,996
+intersection,COMPAS,contrast,Caucasian / Female,tpr,0.24181948082876875,0.6758316008316008,996
+intersection,COMPAS,contrast,Caucasian / Male,fpr,0.11935614905800883,0.24038098573611813,996
+intersection,COMPAS,contrast,Caucasian / Male,tpr,0.44344723183391,0.640291645148333,996
+intersection,COMPAS,equal_05,African-American / Female,fpr,0.22658208525527868,0.44894257265491344,1000
+intersection,COMPAS,equal_05,African-American / Female,tpr,0.6189429571123034,0.9053165584415583,1000
+intersection,COMPAS,equal_05,African-American / Male,fpr,0.3857085106338366,0.5130450913802241,1000
+intersection,COMPAS,equal_05,African-American / Male,tpr,0.7183692614706039,0.8220423856719226,1000
+intersection,COMPAS,equal_05,Caucasian / Female,fpr,0.10212275714712069,0.3059310360660254,1000
+intersection,COMPAS,equal_05,Caucasian / Female,tpr,0.2386021113243762,0.6152244999290679,1000
+intersection,COMPAS,equal_05,Caucasian / Male,fpr,0.11936511223475901,0.24032235099337743,1000
+intersection,COMPAS,equal_05,Caucasian / Male,tpr,0.42243452978580986,0.6024055450240091,1000
+intersection,COMPAS,observed,African-American / Female,fpr,0.2418870967741935,0.4594861308677098,1000
+intersection,COMPAS,observed,African-American / Female,tpr,0.5917844060701204,0.8536585365853658,1000
+intersection,COMPAS,observed,African-American / Male,fpr,0.4097617354196302,0.5272189835926849,1000
+intersection,COMPAS,observed,African-American / Male,tpr,0.7056634938409854,0.8049285113540791,1000
+intersection,COMPAS,observed,Caucasian / Female,fpr,0.10905594405594406,0.3091222570532915,1000
+intersection,COMPAS,observed,Caucasian / Female,tpr,0.23331395348837208,0.5750480769230768,1000
+intersection,COMPAS,observed,Caucasian / Male,fpr,0.1321760136415309,0.25,1000
+intersection,COMPAS,observed,Caucasian / Male,tpr,0.40395481734672073,0.5734265734265734,1000
+intersection,EO_intersection,contrast,African-American / Female,fpr,0.2868452455388601,0.44604796266512836,996
+intersection,EO_intersection,contrast,African-American / Female,tpr,0.4812600832443796,0.6630209972184853,996
+intersection,EO_intersection,contrast,African-American / Male,fpr,0.260940866651354,0.357815010528549,996
+intersection,EO_intersection,contrast,African-American / Male,tpr,0.6002990515424207,0.6782608989818933,996
+intersection,EO_intersection,contrast,Caucasian / Female,fpr,0.3583045630653383,0.5908082776029496,996
+intersection,EO_intersection,contrast,Caucasian / Female,tpr,0.45821481623117627,0.8434741026172557,996
+intersection,EO_intersection,contrast,Caucasian / Male,fpr,0.328747791462451,0.4373466815106711,996
+intersection,EO_intersection,contrast,Caucasian / Male,tpr,0.5415709316159035,0.6938849505437609,996
+intersection,EO_intersection,equal_05,African-American / Female,fpr,0.2965703361886431,0.45118484883465937,1000
+intersection,EO_intersection,equal_05,African-American / Female,tpr,0.4873788837453819,0.6776997631954633,1000
+intersection,EO_intersection,equal_05,African-American / Male,fpr,0.2892461229417804,0.3778433301865086,1000
+intersection,EO_intersection,equal_05,African-American / Male,tpr,0.6062523385048068,0.6869089946346097,1000
+intersection,EO_intersection,equal_05,Caucasian / Female,fpr,0.35580930233609986,0.5907889024152501,1000
+intersection,EO_intersection,equal_05,Caucasian / Female,tpr,0.46007726648692304,0.7934559654353385,1000
+intersection,EO_intersection,equal_05,Caucasian / Male,fpr,0.3287891727763316,0.43721735402801293,1000
+intersection,EO_intersection,equal_05,Caucasian / Male,tpr,0.5264479291037955,0.6651453770772602,1000
+intersection,EO_intersection,observed,African-American / Female,fpr,0.30633204980988243,0.4559749874948382,1000
+intersection,EO_intersection,observed,African-American / Female,tpr,0.47574315143206414,0.6489464172437064,1000
+intersection,EO_intersection,observed,African-American / Male,fpr,0.30965650141513407,0.39260128199875355,1000
+intersection,EO_intersection,observed,African-American / Male,tpr,0.5946593893053141,0.6701170081365063,1000
+intersection,EO_intersection,observed,Caucasian / Female,fpr,0.36382517637254497,0.5901994844894549,1000
+intersection,EO_intersection,observed,Caucasian / Female,tpr,0.46130084589031967,0.7627068012813842,1000
+intersection,EO_intersection,observed,Caucasian / Male,fpr,0.3379257521112132,0.4432091080536989,1000
+intersection,EO_intersection,observed,Caucasian / Male,tpr,0.5169255119691194,0.6455617477273953,1000
+intersection,GBT,contrast,African-American / Female,fpr,0.16333276294775265,0.39696364720701544,996
+intersection,GBT,contrast,African-American / Female,tpr,0.49411899567699513,0.7993869522104748,996
+intersection,GBT,contrast,African-American / Male,fpr,0.25866825623757655,0.3971543627128302,996
+intersection,GBT,contrast,African-American / Male,tpr,0.7115474574608779,0.8146337173423422,996
+intersection,GBT,contrast,Caucasian / Female,fpr,0.04540157442043665,0.22506761038314438,996
+intersection,GBT,contrast,Caucasian / Female,tpr,0.14874814164076228,0.5698916861826697,996
+intersection,GBT,contrast,Caucasian / Male,fpr,0.19913077010268854,0.3329504497874076,996
+intersection,GBT,contrast,Caucasian / Male,tpr,0.38970017757710884,0.6056159354024544,996
+intersection,GBT,equal_05,African-American / Female,fpr,0.18192186285936285,0.40592352452482233,1000
+intersection,GBT,equal_05,African-American / Female,tpr,0.5047611653356995,0.8247178032638632,1000
+intersection,GBT,equal_05,African-American / Male,fpr,0.2954078817554438,0.42160560151458265,1000
+intersection,GBT,equal_05,African-American / Male,tpr,0.7195305437833486,0.8257092059977373,1000
+intersection,GBT,equal_05,Caucasian / Female,fpr,0.04528278900371305,0.22496690203000885,1000
+intersection,GBT,equal_05,Caucasian / Female,tpr,0.14938491389764735,0.5063724867480455,1000
+intersection,GBT,equal_05,Caucasian / Male,fpr,0.19918575993186774,0.3329382535884161,1000
+intersection,GBT,equal_05,Caucasian / Male,tpr,0.37967715068191826,0.5728564551553991,1000
+intersection,GBT,observed,African-American / Female,fpr,0.19667340855865445,0.4133448275862069,1000
+intersection,GBT,observed,African-American / Female,tpr,0.48644553644553645,0.7727487135506002,1000
+intersection,GBT,observed,African-American / Male,fpr,0.32330541181851974,0.44223299111247316,1000
+intersection,GBT,observed,African-American / Male,tpr,0.7039644337478271,0.8048045276641168,1000
+intersection,GBT,observed,Caucasian / Female,fpr,0.05263157894736843,0.22807017543859648,1000
+intersection,GBT,observed,Caucasian / Female,tpr,0.1499537037037037,0.4666666666666666,1000
+intersection,GBT,observed,Caucasian / Male,fpr,0.20903200592397567,0.3382390077243018,1000
+intersection,GBT,observed,Caucasian / Male,tpr,0.3731313669746506,0.5496855415796258,1000
+intersection,LR,contrast,African-American / Female,fpr,0.20056433981794083,0.43243786390892497,996
+intersection,LR,contrast,African-American / Female,tpr,0.47197961063921695,0.7690617223904759,996
+intersection,LR,contrast,African-American / Male,fpr,0.32704538852258425,0.46834491020337876,996
+intersection,LR,contrast,African-American / Male,tpr,0.7303798696844677,0.827434580792329,996
+intersection,LR,contrast,Caucasian / Female,fpr,0.0930986048701036,0.3084394738478706,996
+intersection,LR,contrast,Caucasian / Female,tpr,0.1457244833438717,0.5674862041781632,996
+intersection,LR,contrast,Caucasian / Male,fpr,0.19688862884427402,0.32623481780107266,996
+intersection,LR,contrast,Caucasian / Male,tpr,0.4200219087786645,0.6141134126935345,996
+intersection,LR,equal_05,African-American / Female,fpr,0.21532398230765157,0.4412634251992789,1000
+intersection,LR,equal_05,African-American / Female,tpr,0.47822333852993826,0.7950318227129821,1000
+intersection,LR,equal_05,African-American / Male,fpr,0.36083459222632086,0.4904929939024289,1000
+intersection,LR,equal_05,African-American / Male,tpr,0.7368615466420079,0.837842925740283,1000
+intersection,LR,equal_05,Caucasian / Female,fpr,0.09311636526932272,0.3084044367479615,1000
+intersection,LR,equal_05,Caucasian / Female,tpr,0.15249097546274035,0.5143809523809524,1000
+intersection,LR,equal_05,Caucasian / Male,fpr,0.19694596398225428,0.3261567553875082,1000
+intersection,LR,equal_05,Caucasian / Male,tpr,0.4072489537857019,0.5800149892399167,1000
+intersection,LR,observed,African-American / Female,fpr,0.2278337169159954,0.4492753623188406,1000
+intersection,LR,observed,African-American / Female,tpr,0.4633677298311445,0.75,1000
+intersection,LR,observed,African-American / Male,fpr,0.38635021474588405,0.5094357557930985,1000
+intersection,LR,observed,African-American / Male,tpr,0.7240140618766898,0.8182122225600487,1000
+intersection,LR,observed,Caucasian / Female,fpr,0.09800759013282734,0.3076923076923077,1000
+intersection,LR,observed,Caucasian / Female,tpr,0.15785361842105264,0.4814814814814815,1000
+intersection,LR,observed,Caucasian / Male,fpr,0.20809248554913296,0.331709026669706,1000
+intersection,LR,observed,Caucasian / Male,tpr,0.3971605131414268,0.5579827780914738,1000
+intersection,RW_intersection,contrast,African-American / Female,fpr,0.10376778862828408,0.31514470080078466,996
+intersection,RW_intersection,contrast,African-American / Female,tpr,0.384371772249957,0.684603971979183,996
+intersection,RW_intersection,contrast,African-American / Male,fpr,0.21049833349915437,0.3467436377363465,996
+intersection,RW_intersection,contrast,African-American / Male,tpr,0.6528104748636806,0.7604907800348961,996
+intersection,RW_intersection,contrast,Caucasian / Female,fpr,0.08040229885057472,0.2820462723602534,996
+intersection,RW_intersection,contrast,Caucasian / Female,tpr,0.11111111111111112,0.5198544433094995,996
+intersection,RW_intersection,contrast,Caucasian / Male,fpr,0.1660348444220016,0.288843862556183,996
+intersection,RW_intersection,contrast,Caucasian / Male,tpr,0.34345640849360154,0.5364014612016669,996
+intersection,RW_intersection,equal_05,African-American / Female,fpr,0.12071786187972136,0.32054675506323066,1000
+intersection,RW_intersection,equal_05,African-American / Female,tpr,0.3936806415098332,0.7099619258292728,1000
+intersection,RW_intersection,equal_05,African-American / Male,fpr,0.24822211941389852,0.3716046582148394,1000
+intersection,RW_intersection,equal_05,African-American / Male,tpr,0.6605476391039847,0.7722343705176087,1000
+intersection,RW_intersection,equal_05,Caucasian / Female,fpr,0.08044827586206896,0.28199848006127626,1000
+intersection,RW_intersection,equal_05,Caucasian / Female,tpr,0.12742797118847538,0.47120351287335815,1000
+intersection,RW_intersection,equal_05,Caucasian / Male,fpr,0.16609893397618486,0.2888297668731023,1000
+intersection,RW_intersection,equal_05,Caucasian / Male,tpr,0.3333182476466329,0.5091160124535415,1000
+intersection,RW_intersection,observed,African-American / Female,fpr,0.1333132530120482,0.32857632093933464,1000
+intersection,RW_intersection,observed,African-American / Female,tpr,0.3777083333333333,0.6666666666666666,1000
+intersection,RW_intersection,observed,African-American / Male,fpr,0.27649582256191224,0.3908261494252874,1000
+intersection,RW_intersection,observed,African-American / Male,tpr,0.6458944492378487,0.75087782633479,1000
+intersection,RW_intersection,observed,Caucasian / Female,fpr,0.08637790332705587,0.28071546052631574,1000
+intersection,RW_intersection,observed,Caucasian / Female,tpr,0.13789184952978056,0.4400294117647059,1000
+intersection,RW_intersection,observed,Caucasian / Male,fpr,0.17581881533101043,0.2935624509033778,1000
+intersection,RW_intersection,observed,Caucasian / Male,tpr,0.3265270691609978,0.4890550333455863,1000
+race,BN,contrast,African-American,fpr,0.18275397967482218,0.29471134832788437,1000
+race,BN,contrast,African-American,tpr,0.5796591718024773,0.6858417743037399,1000
+race,BN,contrast,Caucasian,fpr,0.14745186496955562,0.24865557114478137,1000
+race,BN,contrast,Caucasian,tpr,0.3578165258675383,0.5288305094062196,1000
+race,BN,equal_05,African-American,fpr,0.21209384161393197,0.3146433255470176,1000
+race,BN,equal_05,African-American,tpr,0.5877092921352772,0.696908829066681,1000
+race,BN,equal_05,Caucasian,fpr,0.14745186496955562,0.2486555711447814,1000
+race,BN,equal_05,Caucasian,tpr,0.3435556783037873,0.4979504570522499,1000
+race,BN,observed,African-American,fpr,0.23409939830307946,0.3312312605600102,1000
+race,BN,observed,African-American,tpr,0.5722785637964704,0.6756067655935614,1000
+race,BN,observed,Caucasian,fpr,0.1562326388888889,0.25428631460988926,1000
+race,BN,observed,Caucasian,tpr,0.333284023668639,0.47486727985431654,1000
+race,COMPAS,contrast,African-American,fpr,0.3403214186106495,0.4634890496738596,1000
+race,COMPAS,contrast,African-American,tpr,0.7135933768954593,0.8039629022764659,1000
+race,COMPAS,contrast,Caucasian,fpr,0.12983868337515866,0.23421159738075212,1000
+race,COMPAS,contrast,Caucasian,tpr,0.43236617303710667,0.611653535470283,1000
+race,COMPAS,equal_05,African-American,fpr,0.3671680622147301,0.4812305709769131,1000
+race,COMPAS,equal_05,African-American,tpr,0.7211544550782271,0.8150745560193453,1000
+race,COMPAS,equal_05,Caucasian,fpr,0.12983868337515866,0.23421159738075217,1000
+race,COMPAS,equal_05,Caucasian,tpr,0.4094228785017618,0.5706143475611037,1000
+race,COMPAS,observed,African-American,fpr,0.3874416433239963,0.4952168565693121,1000
+race,COMPAS,observed,African-American,tpr,0.7067019279911179,0.7947995405365347,1000
+race,COMPAS,observed,Caucasian,fpr,0.14232135719678463,0.24194478908188582,1000
+race,COMPAS,observed,Caucasian,tpr,0.39238409333536683,0.5408935224131715,1000
+race,EO_race,contrast,African-American,fpr,0.2882644506439632,0.3669790307790529,1000
+race,EO_race,contrast,African-American,tpr,0.5828711788834109,0.6478006041913965,1000
+race,EO_race,contrast,Caucasian,fpr,0.33284886417468035,0.45905770207177565,1000
+race,EO_race,contrast,Caucasian,tpr,0.5749591163361786,0.7442500194129703,1000
+race,EO_race,equal_05,African-American,fpr,0.30912085092213526,0.3828047728257985,1000
+race,EO_race,equal_05,African-American,tpr,0.5888010910093323,0.6566750365275361,1000
+race,EO_race,equal_05,Caucasian,fpr,0.33284886417468035,0.4590577020717756,1000
+race,EO_race,equal_05,Caucasian,tpr,0.5612256491518367,0.7118426661969582,1000
+race,EO_race,observed,African-American,fpr,0.32538620821060404,0.39504616103140444,1000
+race,EO_race,observed,African-American,tpr,0.5768047384961673,0.6407028956979723,1000
+race,EO_race,observed,Caucasian,fpr,0.34413399185255505,0.46497502120146234,1000
+race,EO_race,observed,Caucasian,tpr,0.550917655198205,0.6858102636534841,1000
+race,GBT,contrast,African-American,fpr,0.25675613446746287,0.3774483903358221,1000
+race,GBT,contrast,African-American,tpr,0.6993193118121,0.7985461349543489,1000
+race,GBT,contrast,Caucasian,fpr,0.17506594383220758,0.2894439769230649,1000
+race,GBT,contrast,Caucasian,tpr,0.37230727721245754,0.5616121306882499,1000
+race,GBT,equal_05,African-American,fpr,0.28933701317276966,0.3990667594422455,1000
+race,GBT,equal_05,African-American,tpr,0.7085704868799472,0.8098911549392469,1000
+race,GBT,equal_05,Caucasian,fpr,0.1750659438322076,0.28944397692306484,1000
+race,GBT,equal_05,Caucasian,tpr,0.3621580516172484,0.5302362637706823,1000
+race,GBT,observed,African-American,fpr,0.3137786531086779,0.41668543543543546,1000
+race,GBT,observed,African-American,tpr,0.691847904105656,0.7875200208913649,1000
+race,GBT,observed,Caucasian,fpr,0.18488828202581925,0.29771398408315736,1000
+race,GBT,observed,Caucasian,tpr,0.3535837165448109,0.5075476589295684,1000
+race,LR,contrast,African-American,fpr,0.31954568282987006,0.44248880283922015,1000
+race,LR,contrast,African-American,tpr,0.7121285785809867,0.8076273914972396,1000
+race,LR,contrast,Caucasian,fpr,0.1902133335083942,0.30436489343225387,1000
+race,LR,contrast,Caucasian,tpr,0.3870091951843777,0.575950840849801,1000
+race,LR,equal_05,African-American,fpr,0.3478728484884189,0.4641116172678077,1000
+race,LR,equal_05,African-American,tpr,0.7204056577997545,0.8173509634930777,1000
+race,LR,equal_05,Caucasian,fpr,0.1902133335083942,0.3043648934322538,1000
+race,LR,equal_05,Caucasian,tpr,0.3768471605871109,0.5457925536536623,1000
+race,LR,observed,African-American,fpr,0.3702590776570368,0.4788805751173709,1000
+race,LR,observed,African-American,tpr,0.7040491728434849,0.7976680995849178,1000
+race,LR,observed,Caucasian,fpr,0.20077183514683516,0.3094500511920433,1000
+race,LR,observed,Caucasian,tpr,0.3677291780572262,0.5228921568627451,1000
+race,RW_race,contrast,African-American,fpr,0.3166262922010602,0.438727256656895,1000
+race,RW_race,contrast,African-American,tpr,0.7120139178593213,0.8079227012623037,1000
+race,RW_race,contrast,Caucasian,fpr,0.1902133335083942,0.30436489343225387,1000
+race,RW_race,contrast,Caucasian,tpr,0.3870091951843777,0.575950840849801,1000
+race,RW_race,equal_05,African-American,fpr,0.3449622254035558,0.4584771865730739,1000
+race,RW_race,equal_05,African-American,tpr,0.7211142042979396,0.8187850650112595,1000
+race,RW_race,equal_05,Caucasian,fpr,0.1902133335083942,0.3043648934322538,1000
+race,RW_race,equal_05,Caucasian,tpr,0.3768471605871109,0.5457925536536623,1000
+race,RW_race,observed,African-American,fpr,0.36615178571428575,0.4744797012202075,1000
+race,RW_race,observed,African-American,tpr,0.7049631048980085,0.7976120579908416,1000
+race,RW_race,observed,Caucasian,fpr,0.20077183514683516,0.3094500511920433,1000
+race,RW_race,observed,Caucasian,tpr,0.3677291780572262,0.5228921568627451,1000
+sex,BN,contrast,Female,fpr,0.13238644143642836,0.2725987056567333,1000
+sex,BN,contrast,Female,tpr,0.3223419757158497,0.5465916637368646,1000
+sex,BN,contrast,Male,fpr,0.18079644068442366,0.2545473583861884,1000
+sex,BN,contrast,Male,tpr,0.534527052560705,0.6455343639053406,1000
+sex,BN,equal_05,Female,fpr,0.14292885131511188,0.278663149079765,1000
+sex,BN,equal_05,Female,tpr,0.3257457214967073,0.5651634657609134,1000
+sex,BN,equal_05,Male,fpr,0.18079644068442366,0.25454735838618847,1000
+sex,BN,equal_05,Male,tpr,0.5151392762834888,0.6162946388252072,1000
+sex,BN,observed,Female,fpr,0.15067597815381858,0.2819268093596953,1000
+sex,BN,observed,Female,tpr,0.31815410199556543,0.531950354609929,1000
+sex,BN,observed,Male,fpr,0.19885249562591817,0.27006794109360605,1000
+sex,BN,observed,Male,tpr,0.4999733475479744,0.5939572281916192,1000
+sex,COMPAS,contrast,Female,fpr,0.15960093187601837,0.30921670621055586,1000
+sex,COMPAS,contrast,Female,tpr,0.5082605978272028,0.7293003384831722,1000
+sex,COMPAS,contrast,Male,fpr,0.2659931088152538,0.3522754618344678,1000
+sex,COMPAS,contrast,Male,tpr,0.6403287437493248,0.7346628512796868,1000
+sex,COMPAS,equal_05,Female,fpr,0.1740022196519994,0.3181483117805676,1000
+sex,COMPAS,equal_05,Female,tpr,0.52171347663195,0.753891087966007,1000
+sex,COMPAS,equal_05,Male,fpr,0.26599310881525384,0.3522754618344678,1000
+sex,COMPAS,equal_05,Male,tpr,0.619581626245328,0.7062301406163408,1000
+sex,COMPAS,observed,Female,fpr,0.18542433161638458,0.32638888888888884,1000
+sex,COMPAS,observed,Female,tpr,0.4942494929006085,0.704225352112676,1000
+sex,COMPAS,observed,Male,fpr,0.28416159929199497,0.3660431710536532,1000
+sex,COMPAS,observed,Male,tpr,0.6017480852414779,0.6830395628078818,1000
+sex,EO_sex,contrast,Female,fpr,0.2143230549607802,0.3683811161412154,1000
+sex,EO_sex,contrast,Female,tpr,0.5504512008621687,0.7653359498602582,1000
+sex,EO_sex,contrast,Male,fpr,0.2875059513767813,0.36597540699969977,1000
+sex,EO_sex,contrast,Male,tpr,0.6356727269093101,0.7230578746094407,1000
+sex,EO_sex,equal_05,Female,fpr,0.23035616717719598,0.37726980346536393,1000
+sex,EO_sex,equal_05,Female,tpr,0.5667602911676284,0.7933805521522191,1000
+sex,EO_sex,equal_05,Male,fpr,0.2875059513767813,0.3659754069996997,1000
+sex,EO_sex,equal_05,Male,tpr,0.6161428244281437,0.696448176179643,1000
+sex,EO_sex,observed,Female,fpr,0.24144652626706783,0.38597531645569616,1000
+sex,EO_sex,observed,Female,tpr,0.5388606617647059,0.7432492957746477,1000
+sex,EO_sex,observed,Male,fpr,0.3045164889938279,0.38023798428583444,1000
+sex,EO_sex,observed,Male,tpr,0.6007120785102883,0.6760893703716505,1000
+sex,GBT,contrast,Female,fpr,0.11860235440347305,0.254591816630682,1000
+sex,GBT,contrast,Female,tpr,0.39875299364888944,0.625927341658319,1000
+sex,GBT,contrast,Male,fpr,0.2586789513167274,0.34464355845491745,1000
+sex,GBT,contrast,Male,tpr,0.6420031541568056,0.7436140666842874,1000
+sex,GBT,equal_05,Female,fpr,0.1302349908147836,0.26214645017556887,1000
+sex,GBT,equal_05,Female,tpr,0.4096414113070427,0.6528043148660985,1000
+sex,GBT,equal_05,Male,fpr,0.2586789513167274,0.34464355845491745,1000
+sex,GBT,equal_05,Male,tpr,0.6195230374301026,0.7149310550742846,1000
+sex,GBT,observed,Female,fpr,0.1388848747591522,0.2690417080436941,1000
+sex,GBT,observed,Female,tpr,0.38821691176470585,0.6046583405110536,1000
+sex,GBT,observed,Male,fpr,0.2773318320241348,0.35917497969192463,1000
+sex,GBT,observed,Male,tpr,0.6028524056514574,0.6905393512200718,1000
+sex,LR,contrast,Female,fpr,0.15773976328346076,0.30514167165071765,1000
+sex,LR,contrast,Female,tpr,0.3845767050641943,0.6166599471870282,1000
+sex,LR,contrast,Male,fpr,0.2887843700722946,0.3740795249872464,1000
+sex,LR,contrast,Male,tpr,0.6564513420274795,0.7506191603941682,1000
+sex,LR,equal_05,Female,fpr,0.16838379238163131,0.31111970457079147,1000
+sex,LR,equal_05,Female,tpr,0.39015504696016523,0.6396395341946188,1000
+sex,LR,equal_05,Male,fpr,0.28878437007229457,0.3740795249872464,1000
+sex,LR,equal_05,Male,tpr,0.6360352703347572,0.7227407501805361,1000
+sex,LR,observed,Female,fpr,0.1772065788340653,0.3157894736842105,1000
+sex,LR,observed,Female,tpr,0.379247876061969,0.6,1000
+sex,LR,observed,Male,fpr,0.3076923076923077,0.38868448637316566,1000
+sex,LR,observed,Male,tpr,0.61875,0.7014714272747312,1000
+sex,RW_sex,contrast,Female,fpr,0.11003867721921731,0.24512295714228827,1000
+sex,RW_sex,contrast,Female,tpr,0.3279634074777541,0.5535813901731381,1000
+sex,RW_sex,contrast,Male,fpr,0.2265747508138874,0.3063693437540185,1000
+sex,RW_sex,contrast,Male,tpr,0.5918311938012581,0.6955608090686181,1000
+sex,RW_sex,equal_05,Female,fpr,0.12011051292650056,0.2507260869073982,1000
+sex,RW_sex,equal_05,Female,tpr,0.33409742499130846,0.5728278215022053,1000
+sex,RW_sex,equal_05,Male,fpr,0.2265747508138874,0.30636934375401853,1000
+sex,RW_sex,equal_05,Male,tpr,0.5704176007813065,0.6671958808453446,1000
+sex,RW_sex,observed,Female,fpr,0.1288298712015212,0.2562582236842105,1000
+sex,RW_sex,observed,Female,tpr,0.3217931034482759,0.5368421052631579,1000
+sex,RW_sex,observed,Male,fpr,0.24444020356234095,0.31993872305689774,1000
+sex,RW_sex,observed,Male,tpr,0.5532678595228575,0.6437971937204521,1000

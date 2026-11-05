@@ -1,0 +1,54 @@
+column,role,description,released_dtype,missing_or_empty,unique_values
+id,deduplication only,Released row/person identifier,int64,0,7214
+name,excluded,Released full name (identifier),str,0,7158
+first,person linkage only,Released given name,str,0,2800
+last,person linkage only,Released surname,str,0,3950
+compas_screening_date,excluded,COMPAS screening date (date string),str,0,690
+sex,audit/mitigation group,Released binary sex category; not inferred gender identity,str,0,2
+dob,person linkage only,Released date of birth,str,0,5452
+age,predictive feature,Released age in years at assessment,int64,0,65
+age_cat,excluded,Released age band: Less than 25 / 25 - 45 / Greater than 45,str,0,3
+race,audit/mitigation group,Released race category; not inferred ancestry,str,0,6
+juv_fel_count,predictive feature,Juvenile felony history count,int64,0,11
+decile_score,independent audit baseline,Released COMPAS general recidivism risk decile 1–10,int64,0,10
+juv_misd_count,predictive feature,Juvenile misdemeanor history count,int64,0,10
+juv_other_count,predictive feature,Other juvenile history count,int64,0,10
+priors_count,predictive feature,Released prior-offense history count; historical recording biases possible,int64,0,37
+days_b_screening_arrest,cohort filter only,Released signed screening/arrest offset in days,str,307,424
+c_jail_in,excluded,Jail admission timestamp for assessed case,str,307,6908
+c_jail_out,excluded,Jail release timestamp for assessed case,str,307,6881
+c_case_number,excluded,Assessed case identifier,str,22,7193
+c_offense_date,excluded,Assessed offense date,str,1159,928
+c_arrest_date,excluded,Assessed arrest date,str,6077,581
+c_days_from_compas,excluded,Source-defined day offset between assessed case and COMPAS,str,22,500
+c_charge_degree,predictive feature,Current assessed charge degree F/M,str,0,2
+c_charge_desc,excluded,Assessed charge text,str,29,438
+is_recid,cohort filter only,Released recidivism flag; -1 invalid,int64,0,2
+r_case_number,excluded,Recorded recidivism case identifier,str,3743,3472
+r_charge_degree,excluded,Recorded recidivism charge degree,str,3743,11
+r_days_from_arrest,excluded,Source-defined recidivism/arrest day offset,str,4898,202
+r_offense_date,excluded,Recorded recidivism offense date,str,3743,1076
+r_charge_desc,excluded,Recorded recidivism charge text,str,3801,341
+r_jail_in,excluded,Recorded recidivism jail admission timestamp,str,4898,973
+r_jail_out,excluded,Recorded recidivism jail release timestamp,str,4898,939
+violent_recid,excluded,Additional released violent-recidivism field (not used),str,7214,1
+is_violent_recid,excluded,Released violent-recidivism indicator,int64,0,2
+vr_case_number,excluded,Recorded violent-recidivism case identifier,str,6395,820
+vr_charge_degree,excluded,Recorded violent-recidivism charge degree,str,6395,10
+vr_offense_date,excluded,Recorded violent-recidivism offense date,str,6395,571
+vr_charge_desc,excluded,Recorded violent-recidivism charge description,str,6395,84
+type_of_assessment,excluded,Released general score assessment type,str,0,1
+decile_score.1,excluded,"Second decile_score header, disambiguated by pandas; not an extra feature",int64,0,10
+score_text,cohort filter/audit,General recidivism Low/Medium/High category; N/A excluded,str,0,3
+screening_date,excluded,General assessment screening date,str,0,690
+v_type_of_assessment,excluded,Violent-risk assessment type,str,0,1
+v_decile_score,excluded,Released violent-risk decile,int64,0,10
+v_score_text,excluded,Released violent-risk category,str,0,3
+v_screening_date,excluded,Violent-risk screening date,str,0,690
+in_custody,excluded,Custody entry date,str,236,1157
+out_custody,excluded,Custody exit date,str,236,1170
+priors_count.1,excluded,"Second priors_count header, disambiguated by pandas; unused duplicate field",int64,0,37
+start,excluded,Released follow-up interval start in source-defined day units,int64,0,237
+end,excluded,Released follow-up interval end in source-defined day units,int64,0,1115
+event,excluded,Released follow-up event indicator,int64,0,2
+two_year_recid,observed target,"Released recorded two-year recidivism indicator, not latent behavior",int64,0,2

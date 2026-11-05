@@ -1,0 +1,13 @@
+{
+  "compas_fairness/__init__.py": "65515fd870db86ad3af3b17f860b37659c8f521bb093532e7afec9d213520efa",
+  "compas_fairness/data.py": "d5f5c8bbca1af9c8efe4666d8d67844ae899ad7a7df57e239150c69a947954d2",
+  "compas_fairness/measurement.py": "a0a6ed3e0388e21156cabd7d068b8dfd8924f331a9b2f02ea8843f7a9a64db85",
+  "compas_fairness/metrics.py": "8c86ea0601a27f663c2ee6203c454a39c9722dc3e13c7bdf0ac49f32b7337db3",
+  "compas_fairness/models.py": "8d1cbdeea115197201d3b3bb51796ac0ab2f2cf83832faa0e620db950ce7d6ec",
+  "compas_fairness/report.py": "ee6faf0be6815db829827358afb582e0a69e00353fb791b95081ae30c9a35b78",
+  "compas_fairness/robustness.py": "ff888369832e07220fc8b330d4eda62f045ca4d9890e15e382c608d8744ef06c",
+  "compas_fairness/run.py": "e3953381056faffc0ddbca70aa49ddabeaaff2ad3b4c3f8107e14ee68cfe1dcf",
+  "compas_fairness/sensitivity.py": "fe19abc4381a4a77e85640d55d868d1e27b12c7655854cf3c75a31c211495fdf",
+  "compas_fairness/simulation.py": "dd2babca225db46540aa5e14bd4833e9db90f5aa0bd766f193cccf12476d5ce3",
+  "compas_fairness/uncertainty.py": "12751c621aa1583eb438c92d27fe5b4b84a3caa3e9d34a24c789181b6e62984f"
+}

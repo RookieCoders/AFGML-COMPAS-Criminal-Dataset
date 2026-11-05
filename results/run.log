@@ -1,0 +1,55 @@
+2026-11-05 20:31:42,436 INFO Simulation equal n=1000 repetitions=30 complete
+2026-11-05 20:31:44,794 INFO Simulation equal n=5000 repetitions=30 complete
+2026-11-05 20:31:48,818 INFO EO race supported validation groups: ['African-American', 'Caucasian', 'Hispanic', 'Other']; others retain LR decisions
+2026-11-05 20:31:48,872 INFO Simulation equal n=10000 repetitions=30 complete
+2026-11-05 20:31:48,989 INFO EO sex supported validation groups: ['Female', 'Male']; others retain LR decisions
+2026-11-05 20:31:49,073 WARNING Reweighing unsupported group intersection Asian / Female: retaining unit weights
+2026-11-05 20:31:49,073 WARNING Reweighing unsupported group intersection Asian / Female: retaining unit weights
+2026-11-05 20:31:49,075 WARNING Reweighing unsupported group intersection Native American / Female: retaining unit weights
+2026-11-05 20:31:49,075 WARNING Reweighing unsupported group intersection Native American / Female: retaining unit weights
+2026-11-05 20:31:49,124 INFO EO intersection supported validation groups: ['African-American / Female', 'African-American / Male', 'Caucasian / Female', 'Caucasian / Male', 'Hispanic / Female', 'Hispanic / Male', 'Other / Male']; others retain LR decisions
+2026-11-05 20:31:49,254 INFO Fitted models using 3703 train, 1234 validation, 1235 test people
+2026-11-05 20:31:50,296 INFO Simulation unequal n=1000 repetitions=30 complete
+2026-11-05 20:31:53,296 INFO Simulation unequal n=5000 repetitions=30 complete
+2026-11-05 20:31:54,213 INFO Sensitivity complete for race
+2026-11-05 20:31:56,306 INFO Sensitivity complete for sex
+2026-11-05 20:31:57,622 INFO Simulation unequal n=10000 repetitions=30 complete
+2026-11-05 20:31:59,380 INFO Simulation violation n=1000 repetitions=30 complete
+2026-11-05 20:32:00,706 INFO Sensitivity complete for intersection
+2026-11-05 20:32:01,901 INFO Simulation violation n=5000 repetitions=30 complete
+2026-11-05 20:32:05,666 INFO Simulation violation n=10000 repetitions=30 complete
+2026-11-05 20:32:05,682 INFO Requested stages completed: simulation
+2026-11-05 20:33:55,256 INFO Bootstrap 200/1000
+2026-11-05 20:34:07,412 INFO Bootstrap 400/1000
+2026-11-05 20:34:19,855 INFO Bootstrap 600/1000
+2026-11-05 20:34:32,197 INFO Bootstrap 800/1000
+2026-11-05 20:34:44,774 INFO Bootstrap 1000/1000
+2026-11-05 20:34:47,096 INFO Requested stages completed: bootstrap,robustness
+2026-11-05 20:35:43,211 INFO Simulation equal n=1000 repetitions=30 complete
+2026-11-05 20:35:45,712 INFO Simulation equal n=5000 repetitions=30 complete
+2026-11-05 20:35:49,332 INFO Simulation equal n=10000 repetitions=30 complete
+2026-11-05 20:35:50,819 INFO Simulation unequal n=1000 repetitions=30 complete
+2026-11-05 20:35:53,297 INFO Simulation unequal n=5000 repetitions=30 complete
+2026-11-05 20:35:56,909 INFO Simulation unequal n=10000 repetitions=30 complete
+2026-11-05 20:35:58,415 INFO Simulation violation n=1000 repetitions=30 complete
+2026-11-05 20:36:01,240 INFO Simulation violation n=5000 repetitions=30 complete
+2026-11-05 20:36:05,101 INFO Simulation violation n=10000 repetitions=30 complete
+2026-11-05 20:36:17,509 INFO Bootstrap 200/1000
+2026-11-05 20:36:30,407 INFO Bootstrap 400/1000
+2026-11-05 20:36:43,480 INFO Bootstrap 600/1000
+2026-11-05 20:36:57,614 INFO Bootstrap 800/1000
+2026-11-05 20:37:10,509 INFO Bootstrap 1000/1000
+2026-11-05 20:37:14,630 WARNING mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+2026-11-05 20:37:14,630 WARNING Matplotlib created a temporary cache directory at /tmp/matplotlib-vqd63e54 because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+2026-11-05 20:37:15,614 INFO Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Non-scalable fonts are not supported
+2026-11-05 20:37:15,763 INFO generated new fontManager
+2026-11-05 20:37:23,337 INFO Requested stages completed: simulation,bootstrap,robustness,report
+2026-11-05 20:37:56,050 INFO Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Non-scalable fonts are not supported
+2026-11-05 20:37:56,120 INFO generated new fontManager
+2026-11-05 20:38:02,383 INFO Requested stages completed: models,report
+2026-11-05 20:38:22,092 INFO Sensitivity complete for race
+2026-11-05 20:38:23,686 INFO Sensitivity complete for sex
+2026-11-05 20:38:27,291 INFO Sensitivity complete for intersection
+2026-11-05 20:38:33,867 INFO Requested stages completed: audit,sensitivity,report
+2026-11-05 20:39:33,934 INFO Requested stages completed: report
+2026-11-05 20:40:28,789 INFO Requested stages completed: audit,report

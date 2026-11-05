@@ -1,0 +1,141 @@
+{
+  "LR": {
+    "threshold": 0.44999999999999996
+  },
+  "GBT": {
+    "threshold": 0.4749999999999999
+  },
+  "BN": {
+    "threshold": 0.5
+  },
+  "COMPAS": {
+    "threshold": 5
+  },
+  "RW_race": {
+    "threshold": 0.44999999999999996
+  },
+  "EO_race": {
+    "threshold": "expected randomized selection",
+    "supported_groups": [
+      "African-American",
+      "Caucasian",
+      "Hispanic",
+      "Other"
+    ]
+  },
+  "EO_race_sample0": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample1": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample2": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample3": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample4": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample5": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample6": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample7": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample8": {
+    "threshold": "sampled"
+  },
+  "EO_race_sample9": {
+    "threshold": "sampled"
+  },
+  "RW_sex": {
+    "threshold": 0.4749999999999999
+  },
+  "EO_sex": {
+    "threshold": "expected randomized selection",
+    "supported_groups": [
+      "Female",
+      "Male"
+    ]
+  },
+  "EO_sex_sample0": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample1": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample2": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample3": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample4": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample5": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample6": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample7": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample8": {
+    "threshold": "sampled"
+  },
+  "EO_sex_sample9": {
+    "threshold": "sampled"
+  },
+  "RW_intersection": {
+    "threshold": 0.4749999999999999
+  },
+  "EO_intersection": {
+    "threshold": "expected randomized selection",
+    "supported_groups": [
+      "African-American / Female",
+      "African-American / Male",
+      "Caucasian / Female",
+      "Caucasian / Male",
+      "Hispanic / Female",
+      "Hispanic / Male",
+      "Other / Male"
+    ]
+  },
+  "EO_intersection_sample0": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample1": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample2": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample3": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample4": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample5": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample6": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample7": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample8": {
+    "threshold": "sampled"
+  },
+  "EO_intersection_sample9": {
+    "threshold": "sampled"
+  }
+}

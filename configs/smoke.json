@@ -1,0 +1,12 @@
+{
+  "seed": 2026,
+  "bootstrap": 5,
+  "simulation_reps": 1,
+  "sample_sizes": [
+    1000
+  ],
+  "grid_max": 0.1,
+  "grid_step": 0.1,
+  "tie_tolerance": 0.0001,
+  "sparse_min_class": 20
+}

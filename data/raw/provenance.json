@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/propublica/compas-analysis",
+  "commit": "bafff5da3f2e45eca6c2d5055faad269defd135a",
+  "sha256": {
+    "compas-scores-two-years.csv": "c451db85908b2f7fef1d83203bedf6b71ecda0d5af468d82ae62178f91d0cc7d",
+    "Compas Analysis.ipynb": "6b2ce1184eade074a1265c2ca5fe4f7251a30e43b5164fb05d4d47f9355e2079",
+    "truth_tables.py": "a1d3cacf9fa5bb43d8a1f6c48cdda1d188a00ff0931f8b1dd35f3ea43d5c81cf"
+  }
+}
