@@ -40,14 +40,14 @@ flowchart LR
     Z --> Y
 ```
 
-The corresponding [measurement figure](figures/01_measurement_dag.png) and [implementation](compas_fairness/measurement.py) describe a statistical generative model, not a discovered causal graph. Group arrows represent heterogeneity, not biological explanations of race.
+The corresponding [measurement figure](figures/01_measurement_dag.png) and [implementation](compas_fairness/measurement.py) describe a statistical generative model.
 
 ```math
 p(a,x,y^*,d,\tilde y)
 =p(a)\,p(x\mid a)\,p(y^*\mid a,x)\,p(d\mid a,x)\,p(\tilde y\mid y^*,a).
 ```
 
-**Observed:** group `A` (race, sex or intersection), covariates `X`, recorded outcome Ỹ and evaluated decision `D`. The six predictors are age, prior count, three juvenile-history counts and current charge degree. **Latent:** Y*. Group recording rates are fixed sensitivity inputs, not learned latent quantities:
+**Observed:** group `A` (race, sex or intersection), covariates `X`, recorded outcome Ỹ and evaluated decision `D`. The six predictors are age, prior count, three juvenile-history counts and current charge degree. **Latent:** Y*. Group recording rates are fixed sensitivity inputs:
 
 ```math
 \alpha_a=P(\tilde Y=1\mid Y^*=0,A=a),\qquad
@@ -181,7 +181,7 @@ For a quick pipeline check, `python -m compas_fairness.run --config configs/smok
 
 ### Demonstration link template
 
-The commands above provide an executable CLI demonstration. Fill in the recording details when available:
+The commands above provide an executable CLI demonstration:
 
 ```text
 Demonstration/video URL:
