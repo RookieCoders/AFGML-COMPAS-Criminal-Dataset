@@ -42,26 +42,26 @@ flowchart LR
 
 The corresponding [measurement figure](figures/01_measurement_dag.png) and [implementation](compas_fairness/measurement.py) describe a statistical generative model, not a discovered causal graph. Group arrows represent heterogeneity, not biological explanations of race.
 
-$$
+```math
 p(a,x,y^*,d,\tilde y)
 =p(a)\,p(x\mid a)\,p(y^*\mid a,x)\,p(d\mid a,x)\,p(\tilde y\mid y^*,a).
-$$
+```
 
 **Observed:** group `A` (race, sex or intersection), covariates `X`, recorded outcome Ỹ and evaluated decision `D`. The six predictors are age, prior count, three juvenile-history counts and current charge degree. **Latent:** Y*. Group recording rates are fixed sensitivity inputs, not learned latent quantities:
 
-$$
+```math
 \alpha_a=P(\tilde Y=1\mid Y^*=0,A=a),\qquad
 \beta_a=P(\tilde Y=0\mid Y^*=1,A=a).
-$$
+```
 
 The key assumption is Ỹ ⟂ (`X`,`D`) | (`Y*`,`A`). For each decision stratum, the measurement equation is
 
-$$
+```math
 \begin{bmatrix}P(D=d,\tilde Y=0\mid a)\\P(D=d,\tilde Y=1\mid a)\end{bmatrix}
 =
 \begin{bmatrix}1-\alpha_a&\beta_a\\\alpha_a&1-\beta_a\end{bmatrix}
 \begin{bmatrix}P(D=d,Y^*=0\mid a)\\P(D=d,Y^*=1\mid a)\end{bmatrix}.
-$$
+```
 
 **Inference query:** `P(Y*=1 | D=d, A=a; alpha_a, beta_a)`, obtained by inverting these joint cells and normalizing within `D=d`. Inversion requires `1-alpha-beta > 1e-8`, valid cells and forward reconstruction within `1e-10`; undefined outcome denominators invalidate fairness metrics. Materially negative cells are rejected, not clipped. Feasibility shows compatibility, not that the independence assumption is true. A separate illustrative Bayesian network checks `P(Y* | A, Ytilde, D)` by pgmpy variable elimination against direct enumeration; it does not fit an identified latent-outcome model to COMPAS.
 
@@ -69,9 +69,9 @@ $$
 
 **Primary fairness criterion:** equalized-odds disparity
 
-$$
+```math
 \Delta_{EO}=\max\{\max_a TPR_a-\min_a TPR_a,\ \max_a FPR_a-\min_a FPR_a\},
-$$
+```
 
 where `TPR_a=P(D=1 | Y=1,A=a)` and `FPR_a=P(D=1 | Y=0,A=a)`, using Ỹ for observed evaluation and Y* for hypothetical evaluation. Lower is better. The normative rationale is to examine both unequal false high-risk classifications and unequal detection conditional on outcome status. This choice does not resolve whether the recorded label is legitimate or whether classification should be used. Calibration, predictive parity and selection rates can raise different concerns; EO alone does not establish fairness. No acceptable utility-loss threshold was prespecified.
 
