@@ -179,16 +179,6 @@ Expected outputs include the headline table above, [bootstrap intervals](results
 
 For a quick pipeline check, `python -m compas_fairness.run --config configs/smoke.json` uses reduced bootstraps, simulation repetitions and grids; it cannot reproduce the headline counts and also overwrites artifacts. Use a separate clone. For selected stages, the CLI accepts `--stages audit,models,sensitivity,simulation,bootstrap,robustness,report`. `--reuse-models` accepts only a locally trusted, content-verified model cache; after code/dependency changes retrain without it. Clean clones train their own cache. New stage executions append configuration and source fingerprints to [stage history](results/stage_history.jsonl).
 
-### Demonstration link template
-
-The commands above provide an executable CLI demonstration:
-
-```text
-Demonstration/video URL:
-Presenter(s):
-Recorded date:
-Repository commit:
-```
 
 ## 6. Related work
 
